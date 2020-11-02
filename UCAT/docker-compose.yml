@@ -1,0 +1,49 @@
+version: '3.3'
+
+services:
+  backend:
+    build: ./server
+    container_name: backend
+    restart: always
+    expose:
+      - 8000
+    networks:
+      main-network:
+        aliases:
+          - ucat-app
+
+  client:
+    image: nginx:alpine
+    build: ./client
+    container_name: client
+    restart: always
+    volumes:
+       - web-root:/usr/share/nginx/html
+       - ./data/certbot/conf:/etc/letsencrypt
+       - ./data/certbot/www:/var/www/certbot
+    expose:
+      - 80
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - backend
+    networks:
+      - main-network
+    depends_on:
+      - backend
+
+  certbot:
+    image: certbot/certbot
+    depends_on:
+      - client
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+networks:
+  main-network:
+
+volumes:
+  web-root:

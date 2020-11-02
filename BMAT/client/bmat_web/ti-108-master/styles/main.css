@@ -1,0 +1,153 @@
+/******************************
+BODY
+*******************************/
+
+html {
+  background-color: #badae5;
+}
+
+body{
+  width: 100%;
+}
+
+#calc-body {
+  height: 450px;
+  width: 300px;
+  background-color:#0d57b6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Courier New", monospace;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+
+/******************************
+HEADER
+*******************************/
+
+#header {
+  height: 130px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #444;
+}
+
+#screen {
+  width: 250px;
+  height: 40px;
+  background-color: slategrey;
+  border-radius: 2px;
+
+}
+
+#screen p {
+  text-align: right;
+  padding: 10px 10px 0 0; 
+  font-size: 24px;
+  color: #333;
+}
+
+#decoration {
+  width: 250px;
+  display: flex; 
+  justify-content: space-between;
+}
+
+#solar {
+  height: 40px;
+  width: 160px;
+  background-color: #584237;
+  display: flex;
+}
+
+.solarbox {
+  height: 100%;
+  width: 40px;
+  border: 0.1px solid slategrey;
+}
+
+#logo {
+  font-size: 20px;
+  color: white;
+}
+
+
+/******************************
+BUTTONS
+*******************************/
+
+
+#button-box,
+.col {
+  display: flex;
+  height: 280px;
+}
+
+#button-box {
+  width: 280px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.col {
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.left-buttons {
+  width: 200px;
+}
+
+.right-buttons {
+  width: 60px;
+  flex-direction: column;
+}
+
+.button {
+  width: 50px;
+  height: 30px;
+  border-radius: 2px;
+  padding-left: 4px;
+  padding-top: 4px;
+  font-size: 16px;
+}
+
+.number {
+  background-color: white;
+  color: #0d57b6; 
+}
+
+.op {
+  background-color: #db3c32;
+  color: white;
+}
+
+#equals {
+  height: 80px;
+}
+
+
+
+/*** ANIMATION ***/
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translateY(1.5px);
+}
+
+
+

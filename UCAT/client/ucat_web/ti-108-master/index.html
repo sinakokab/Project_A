@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:: Calculator ::</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <div id="calc-body">
+    <div id="header">
+      <div id="screen">
+        <p id="output"></p>
+      </div>
+      <div id="decoration">
+        <div id="solar">
+          <div class="solarbox"></div>
+          <div class="solarbox"></div>
+          <div class="solarbox"></div>
+          <div class="solarbox"></div>
+        </div>
+        <p id="logo">TI-108</p>
+      </div>
+    </div>
+    
+    <div id="button-box">
+      <div class="col left-buttons">
+        <div class="op button" id="sign">+/-</div>
+        <div class="op button" id="sqrt">&radic;</div>
+        <div class="op button" id="percent">%</div> 
+        <div class="op button" id="mrc">MRC</div>
+        <div class="op button" id="msubtract">M-</div>
+        <div class="op button" id="madd">M+</div>
+        <div class="number button">7</div>
+        <div class="number button">8</div>
+        <div class="number button">9</div>
+        <div class="number button">4</div>
+        <div class="number button">5</div>
+        <div class="number button">6</div>
+        <div class="number button">1</div>
+        <div class="number button">2</div>
+        <div class="number button">3</div>
+        <div class="op button" id = "clear" >ON/C</div>
+        <div class="number button">0</div>
+        <div class="number button">.</div>
+      </div>
+      
+      <div class="col right-buttons">
+        <div class="op button" id="divide">&divide;</div>
+        <div class="op button" id="multiply">&times;</div>
+        <div class="op button" id="subtract">-</div>
+        <div class="op button" id="add">+</div>
+        <div class="op button" id="equals">=</div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="scripts/calculate.js"></script>
+</body>
+</html>

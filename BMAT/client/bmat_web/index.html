@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="examcode.js"></script>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="login-page">
+        <div class="form">
+          <p id="Login_Title">BMAT LOGIN</p>  
+          <form>
+            <input id="Username_Input" type="text" placeholder="&#xf007;  email"/>
+            <button id="LoginButton" type='button'>Login</button>
+            <p class="message"></p>
+          </form>
+        </div>
+      </div>
+
+    <div id="quiz_body">
+        <div id="exam_container">
+            <div id="header">
+                <div id="top_header">
+                    <div id="left_section_top_header">
+                        <h1 id="exam_title">Verbal Reasoning</h1>
+                    </div>
+                    <div id="right_section_top_header">
+                        <span id="clock"></span>
+                        <span id="question_position"></span>
+                    </div>
+                    
+                    </div>
+                <div id="bottom_header">
+                    <div id="left_section_bottom_header">
+                        <div class="button" id="calculator_button">Calculator</div>
+                        <div class="button" id="scratchpad_button">Scratch pad</div>
+                    </div>
+                    <div id="right_section_bottom_header">
+                        <div class="button" id="flagreview_button">Flag for review</div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div id="exam_content">
+    
+                <div id="question" class="">
+                    <div id="question_statement">
+                        <div id="statement_content">
+                            
+                        </div>
+                    </div>
+    
+                    <div id="exam_question_divider"></div>
+                    <div id="answers">
+                        <div id="answers_content">
+                            <div id="answer_images"></div>
+                            <div id="answer_instructions"></div>
+                            <div id="answer_buttons"></div>
+                            <div id="answer_explanations"></div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <div id="footer">
+                <div id="left_section_footer">
+                    <div class="button" id="end_exam_btn">End Exam</div>
+                    <div class="button" id="end_review_btn">End Review</div>
+                    <div class="button" id="review_screen_btn">Review Screen</div>
+                    <div class="button" id="end_marking_btn">End Marking</div>
+                </div>
+    
+                <div id="right_section_footer">
+                    <div class="button" id="next_question_btn">Next</div>
+                    <div class="button" id="previous_question_btn">Previous</div>
+                    <div class="button" id="return_marking_overview_btn">Marking Overview</div>
+                    <div class="button" id="review_all_btn">Review All</div>
+                    <div class="button" id="review_incomplete_btn">Review Incomplete</div>
+                    <div class="button" id="review_flagged_btn">Review Flagged</div>
+                </div>
+            </div>
+    
+        </div>
+    
+        <div id="intro_container">
+            <div id="intro_title">QUESTION BANKS</div>
+            <div id="selection_container"></div>
+        </div>
+    
+        <div id="marking_container">
+            <div id="marking_title">Results</div>
+            <div id="marking_overview_results_container"></div>
+        </div>
+    </div>
+
+</body>

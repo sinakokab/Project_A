@@ -1,0 +1,467 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    overflow: hidden;
+}
+p {
+    margin: 0 0 15px;
+}
+h2 {
+    text-align: center;
+    font-size:20px;
+    margin: 0;
+    padding: 0 0 25px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+}
+li {
+    list-style-type: none;
+}
+div.button {
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 12px;
+}
+
+#right_section_footer .button,
+#right_section_bottom_header .button {
+    border-left: 2px solid #fff;
+    float: right;
+}
+
+#left_section_footer .button,
+#left_section_bottom_header .button {
+    border-right: 2px solid #fff;
+    float: left;
+}
+
+div.button:hover {
+    color: #ff0;
+}
+
+#next_question_btn{ 
+    float:right; 
+} /* Moves button when no previous questions available */
+
+#previous_question_btn{
+    float:right; 
+} /* Moves button when no next questions available */
+
+div.button kbd {
+    font-family: inherit;
+    text-decoration: underline;
+}
+
+#header,
+#footer {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+#top_header,
+#bottom_header {
+    color: #fff;
+    padding: 0 5px;
+}
+
+#top_header {
+    background: #006daa;
+    border-bottom: 2px solid #fff;
+    line-height: 45px;
+    height: 45px;
+}
+
+#bottom_header {
+    background-color: #80aee1;
+    line-height: 32px;
+    height: 32px;
+    font-size: 17px;
+}
+
+#exam_title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    float: left;
+}
+
+#review,
+#marking_container {
+    padding: 20px 20px 20px 20px;
+}
+
+#exam_content {
+    position: absolute;
+    top: 79px;
+    bottom: 33px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+#footer {
+    top: auto;
+    bottom: 0;
+    background-color: #006daa;
+    line-height: 33px;
+    height: 33px;
+}
+
+#left_section_footer,
+#right_section_footer,
+#left_section_top_header,
+#right_section_top_header,
+#right_section_bottom_header,
+#left_section_bottom_header {
+    width: 50%;
+}
+
+#left_section_footer,
+#left_section_top_header,
+#left_section_bottom_header {
+    float: left;
+}
+
+#right_section_footer,
+#right_section_top_header,
+#right_section_bottom_header {
+    float: right;
+}
+
+#clock, #question_position {
+    padding: 0 2px;
+    border: 1px solid transparent;
+    float: right;
+    clear: right;
+}
+
+#right_section_top_header{
+    line-height: 16px;
+    padding-top: 5px;
+}
+
+#left_section_top_header{
+    line-height: 16px;
+    padding-top: 5px;
+}
+
+#answers_content,
+#statement_content {
+    padding: 20px 20px 20px 20px;
+}
+
+#answer_instructions {
+    padding-bottom: 10px;
+}
+
+
+#question.layout_vertical_split {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#question.layout_vertical_split #question_statement {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 59.7%;
+}
+#question.layout_vertical_split #answers {
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 39.7%;
+}
+#question.layout_vertical_split #exam_question_divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 59.7%;
+    right: 39.7%;
+    background-color: #006daa;
+}
+
+#question.layout_horizonatal_split #proposal,
+#question.layout-horizonatal-split #answers {
+    width: auto;
+}
+#question.layout_horizonatal_split #exam_question_divider {
+    display: none;
+}
+
+#review_table,
+#marking_table {
+    width: 100%;
+    margin-top: 2px;
+    border-spacing: 1px;
+    border-collapse: collapse;
+}
+#review_table td,
+#marking_table td {
+    width: calc(100% / 3);
+    padding: 0 12px;
+    line-height: 33px;
+    border: 1px solid silver;
+    text-align: left;
+    font-size: 15px;
+}
+
+#CORRECT,
+.CORRECT {
+    background: #008000;
+}
+
+#INCORRECT,
+.INCORRECT {
+    background: #ff0000; 
+}
+
+.CorrectIncorrectLabel {
+    direction: rtl;
+    padding: 7.5px;
+    border-radius: 50px;
+    margin-bottom: auto;
+    margin-left: 20px;  
+}
+
+.Image_Present {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.marking_li_radio {
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro_container {
+    margin: 20px auto;
+    border: 10px solid black;
+    width: 480px;
+    height: 880px;
+}
+
+#exam_title {
+    margin-top: 5px;
+}
+
+#intro_title {
+    margin: 20px auto;
+    font-size: 25px;
+    text-align: center;
+}
+
+.intro_radiobox{
+    margin: 10px 20px 10px 20px;
+}
+
+#marking_container {
+    position: absolute;
+    top: 79px;
+    bottom: 33px;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+
+#marking_overview_results_container,
+#marking_title {
+    margin: 10px auto;
+    font-size: 30px;
+    text-align: center;
+}
+
+.marking_section {
+    margin-bottom: 20px;
+}
+
+#answer_images {
+    margin-bottom: 20px;
+}
+
+.answer_dropped.DragDropAnswerBox,
+.answer_dropped.DragDropAnswerBox_Multi {
+    background: #fff;
+}
+  
+.DragDrop {
+    border: 1px solid #000;
+    background: #fff;
+    padding: 10px;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+ }
+  
+.DragDropStatement {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 510px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.DragDropStatement_Multi {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-right: 20px;
+    width: 130px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.DragDropAnswerBox_Multi{
+    border: 1px solid #000;
+    background: #bab1b1;
+    display: inline-block;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.DragDropAnswerBox {
+    border: 1px solid #000;
+    background: #bab1b1;
+    padding: 10px;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+.DragDropContainer,
+.DragDrop_Answer_Container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#answer_explanations {
+    margin-top: 20px;
+}
+  
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #48c9b0;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: FontAwesome, "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  outline: 0;
+  background: #17a589;
+  width: 100%;
+  border: 0;
+  margin: 0px 0px 8px;
+  padding: 15px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #148f77;
+}
+
+#Login_Title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form .message {
+  margin: 6px 6px;
+  text-align: center;
+}
+
+.form .message a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 13px;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
