@@ -1,6 +1,7 @@
 # Client_Project_A
 
 Full stack web application made for a client. (01/07/20 - 01/09/20)
+Note - Some areas i.e. question data/questionbank data etc have been removed to prevent use of the program aside from the client. Please do not request the aforementioned data or variables names as they have been removed on purpose.
 
 Languages:
   * JS with Jquery for front end.
