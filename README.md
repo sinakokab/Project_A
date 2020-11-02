@@ -18,5 +18,5 @@ Functionality:
 Improvements:
   * Add functionality for automatic deployment without technical know-how.
   * Change framework from Jquery to something modular i.e. React/Angular
-  * DRY framework for code, could've been far shorter and more efficient.
+  * DRY with code, could've been far shorter and more efficient.
   
