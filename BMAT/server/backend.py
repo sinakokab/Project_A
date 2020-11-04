@@ -91,7 +91,6 @@ def CheckStripeCustomers():
                 EmailsToBeAppended_UCAT.append(Customer['email'].lower())
                 print(Customer['email'] + '\nUCAT & BMAT Invoice')
 
-    EmailsToBeAppended_BMAT.append('developer_test@iwanttobeadentist.com')
     print('UCAT')
     print(EmailsToBeAppended_UCAT)
     print('BMAT')
