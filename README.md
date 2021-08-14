@@ -1,8 +1,6 @@
-# Client_Project_A
+Project_A
 
-Full stack web application made for a client (01/07/20 - 01/09/20).
-
-Note - Some areas i.e. question data/questionbank data etc have been removed.
+Full stack web application (01/07/20 - 01/09/20).
 
 Languages:
   * JS with Jquery for front end.
@@ -11,7 +9,7 @@ Languages:
   * Shell application for SSL certificate generation + auto renewal.
   
 Functionality:
-  * Syncs stripe customers and allows them to login to their respective portals depending on the package purchased.
+  * Stripe
   * Quiz applications with flagging, notepad, calculator and review incomplete questions functions.
   * Easy deployment with Docker, alongside auto restarting in the case of an application crash or server downtime.
   
