@@ -9,7 +9,6 @@ Languages:
   * Shell application for SSL certificate generation + auto renewal.
   
 Functionality:
-  * Stripe
   * Quiz applications with flagging, notepad, calculator and review incomplete questions functions.
   * Easy deployment with Docker, alongside auto restarting in the case of an application crash or server downtime.
   
