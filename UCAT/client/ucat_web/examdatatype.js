@@ -381,9 +381,11 @@ exam = {
             }
             
             
-            if (exam.sections[SectionNumber].UserChosenAnswerByID[QuestionNumberToBeUsed] != null){
+            if (exam.sections[SectionNumber].UserChosenAnswerByID[QuestionNumberToBeUsed] != null && exam.sections[SectionNumber].UserChosenAnswerByID[QuestionNumberToBeUsed] == i){
                 CheckedOrNot = "checked";  
-            } 
+            } else {
+		        CheckedOrNot = "";
+	        }
 
             var imageintermediate = ""; // Still needs to be declared otherwise the program is gonna throw an error if a variable that doesn't exist is referenced
             if (exam.sections[SectionNumber].PotentialAnswers[QuestionNumberToBeUsed][i].constructor === Array){ //Checks if the array has another array; this only happens if there's an image and text, otherwise there's just text
